@@ -1,7 +1,7 @@
 - name: Home
   link: /
 - name: Products
-  link: /products/
+  link: /products
 - name: Blog
   link: /blog/
 - name: About
