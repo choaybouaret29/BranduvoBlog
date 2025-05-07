@@ -1,10 +1,10 @@
 - name: Home
   link: /
 - name: Products
-  link: /products
+  link: /products/
 - name: Blog
   link: /blog/
 - name: About
-  link: /about
+  link: /about/
 - name: Contact
   link: /contact/
