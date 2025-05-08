@@ -1,12 +1,12 @@
 ---
 layout: page
-#title: Terms of Service
+title: Terms of Service
 description: "Premium tools and resources for digital entrepreneurs and creative professionals. Our curated selection helps you grow your business with trusted solutions."
 permalink: /terms/
 ---
 
 
-# Terms of Service
+
 
 Last Updated: May 8, 2025
 
