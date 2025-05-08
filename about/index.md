@@ -1,7 +1,7 @@
 layout: default
 title: About Branduvo
 description: "Learn about Branduvo's mission to provide premium tools and resources for digital entrepreneurs and creative professionals."
-permalink: /about/
+permalink: /ab
 
 Our Mission
 At Branduvo, we're on a mission to empower digital entrepreneurs and creative professionals with carefully curated tools and resources that drive real business growth. As a division of Daxirush Ltd, we combine industry expertise with rigorous testing to identify solutions that truly deliver on their promises.
