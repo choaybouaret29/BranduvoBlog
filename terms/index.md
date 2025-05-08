@@ -5,6 +5,7 @@ description: "Premium tools and resources for digital entrepreneurs and creative
 permalink: /terms/
 ---
 
+
 # Terms of Service
 
 Last Updated: May 8, 2025
