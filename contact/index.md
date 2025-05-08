@@ -1,137 +1,169 @@
 ---
-layout: page
-title: About Branduvo
-description: "Learn about Branduvo's mission to provide premium tools and resources for digital entrepreneurs and creative professionals."
-permalink: /contact/ # Using a more standard permalink
-
-# Open Graph / Social Media Meta Tags (placeholders, adjust with your site's actual setup)
-og_title: "About Branduvo"
-og_description: "Learn about Branduvo's mission to provide premium tools and resources for digital entrepreneurs and creative professionals."
-og_url: "http://yourdomain.com/about/" # Replace with {{ site.url }}{{ page.url }} in actual use
-og_site_name: "Branduvo"
-og_type: "website"
-# og_image: "http://yourdomain.com/assets/images/social/about-branduvo.jpg" # Example
-
-# Twitter Card data (placeholders)
-twitter_card: summary_large_image
-twitter_title: "About Branduvo"
-twitter_description: "Learn about Branduvo's mission to provide premium tools and resources for digital entrepreneurs and creative professionals."
-# twitter_image: "http://yourdomain.com/assets/images/social/about-branduvo.jpg" # Example
-# twitter_site: "@yourtwitterhandle"
+layout: default
+title: "Contact Us - Get Support & Inquiries | Your Site Name" # SEO-optimized page title
+permalink: /contact/ # Clean, SEO-friendly URL
+description: "Reach out to Your Site Name easily through our contact form. Whether you have questions, need support, or want to provide feedback, we're here to help. Get in touch today!" # Compelling meta description
+# Optional: For Open Graph (Facebook/LinkedIn) & Twitter Cards - often handled by SEO plugins or layout includes
+# og_title: "{{ page.title }}"
+# og_description: "{{ page.description }}"
+# og_image: "/assets/images/contact-og-image.jpg" # Path to an image for social sharing
+# twitter_card: summary_large_image
 ---
 
-<h2 id="our-mission">Our Mission</h2>
-<p>At Branduvo, we're on a mission to empower digital entrepreneurs and creative professionals with carefully curated tools and resources that drive real business growth. As a division of Daxirush Ltd, we combine industry expertise with rigorous testing to identify solutions that truly deliver on their promises.</p>
+<style>
+  /* Basic styling - move to your main CSS file for better organization */
+  .contact-container {
+    max-width: 700px; /* Constrain width for readability */
+    margin: 20px auto;
+    padding: 20px;
+    /* background-color: #f9f9f9; */ /* Optional: light background for the section */
+    /* border-radius: 8px; */
+  }
 
-<h2 id="who-we-are">Who We Are</h2>
-<p>Founded in 2022, Branduvo emerged from a simple observation: digital entrepreneurs and creators were overwhelmed by choice but underwhelmed by guidance. Our team of digital marketing specialists, software developers, and content creators came together with a shared vision—to create a trusted resource that cuts through the noise.</p>
-<p>Our headquarters in London serves as the hub for our international team of experts who rigorously evaluate the tools and resources we recommend. With combined experience of over 50 years in digital entrepreneurship, our insights come from real-world application, not theoretical knowledge.</p>
+  .contact-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
 
-<h2 id="what-sets-us-apart">What Sets Us Apart</h2>
-<!-- You might want to style this section as a grid, similar to "benefits-grid" in your example -->
-<div class="feature-items"> <!-- Add a class for potential grid styling -->
-  <div class="feature-item">
-    <h3 id="expert-evaluation">Expert Evaluation</h3>
-    <p>Every product featured on Branduvo undergoes thorough testing by our team of specialists. We dive deep into functionality, usability, value for money, and customer support to ensure we only recommend tools that meet our exacting standards.</p>
-  </div>
-  <div class="feature-item">
-    <h3 id="honest-reviews">Honest Reviews</h3>
-    <p>While we participate in affiliate programs, our editorial integrity is never compromised. Our recommendations are based solely on merit, and we're not afraid to highlight limitations alongside strengths. You'll always get the full picture, not just the selling points.</p>
-  </div>
-  <div class="feature-item">
-    <h3 id="practical-insights">Practical Insights</h3>
-    <p>We don't just list features—we explain how each tool can be applied to solve real business challenges and create tangible results. Our content bridges the gap between product capabilities and practical application.</p>
-  </div>
-  <div class="feature-item">
-    <h3 id="community-focus">Community Focus</h3>
-    <p>Branduvo is more than a review site; it's a community of forward-thinking entrepreneurs and creators. We actively engage with our audience to understand evolving needs and challenges, ensuring our recommendations remain relevant and valuable.</p>
-  </div>
+  .contact-intro {
+    margin-bottom: 30px;
+    line-height: 1.6;
+    text-align: center; /* Or left, depending on your design */
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+  }
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+  }
+  .form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  .submit-button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  .honeypot-field {
+    display: none !important;
+  }
+</style>
+
+<div class="contact-container">
+  <h1>Get in Touch with Us</h1>
+
+  <p class="contact-intro">
+    We'd love to hear from you! Whether you have a question about our services, need assistance,
+    or just want to share your feedback, please fill out the form below. Our team
+    will get back to you as soon as possible.
+  </p>
+
+  <form method="POST" action="https://formspree.io/f/YOUR_FORM_ID_HERE" id="contactForm">
+    <!-- Important: Replace YOUR_FORM_ID_HERE with your actual Formspree ID -->
+
+    <div class="form-group">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="e.g., Jane Doe" required aria-required="true">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="_replyto" placeholder="e.g., jane.doe@example.com" required aria-required="true">
+      <!-- Using name="_replyto" allows direct reply from your email client -->
+    </div>
+
+    <div class="form-group">
+      <label for="subject">Subject (Optional):</label>
+      <input type="text" id="subject" name="subject" placeholder="e.g., Question about Services">
+    </div>
+
+    <!-- Hidden subject for your email, if you prefer a fixed one -->
+    <input type="hidden" name="_subject" value="New Contact Form Submission from [Your Site Name]!">
+
+    <div class="form-group">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="6" placeholder="Please type your message here..." required aria-required="true"></textarea>
+    </div>
+
+    <!-- Honeypot field for spam prevention -->
+    <div class="honeypot-field" aria-hidden="true">
+      <label for="honeypot">Do not fill this out if you are human:</label>
+      <input type="text" id="honeypot" name="_gotcha" tabindex="-1" autocomplete="off">
+    </div>
+
+    <!-- Optional: Redirect to a thank-you page -->
+    <!-- <input type="hidden" name="_next" value="https://yourdomain.com/thank-you/"> -->
+
+    <button type="submit" class="submit-button">Send Message</button>
+  </form>
 </div>
 
-<h2 id="our-review-process">Our Review Process</h2>
-<ol class="styled-list"> <!-- Add a class for styling if needed -->
-  <li>
-    <h4 id="selection">1. Selection</h4>
-    <p>We identify promising tools through market research, user suggestions, and emerging trends in the digital entrepreneurship space.</p>
-  </li>
-  <li>
-    <h4 id="hands-on-testing">2. Hands-on Testing</h4>
-    <p>Our team uses each product in real-world scenarios, often implementing them in actual business operations to gauge effectiveness.</p>
-  </li>
-  <li>
-    <h4 id="evaluation-criteria">3. Evaluation Criteria</h4>
-    <p>Products are assessed across multiple dimensions:</p>
-    <ul>
-      <li>Ease of use and learning curve</li>
-      <li>Feature set and flexibility</li>
-      <li>Performance and reliability</li>
-      <li>Value proposition and pricing structure</li>
-      <li>Quality of customer support</li>
-      <li>Security and data protection</li>
-      <li>Integration capabilities</li>
-    </ul>
-  </li>
-  <li>
-    <h4 id="comparative-analysis">4. Comparative Analysis</h4>
-    <p>We benchmark products against alternatives to identify strengths, weaknesses, and ideal use cases.</p>
-  </li>
-  <li>
-    <h4 id="ongoing-monitoring">5. Ongoing Monitoring</h4>
-    <p>Even after publication, we continue to monitor product updates and user feedback, updating our reviews to reflect significant changes.</p>
-  </li>
-</ol>
-
-<h2 id="our-values">Our Values</h2>
-<div class="value-items"> <!-- Add a class for potential grid styling -->
-  <div class="value-item">
-    <h3 id="integrity">Integrity</h3>
-    <p>We prioritize honest, unbiased assessments over affiliate relationships.</p>
-  </div>
-  <div class="value-item">
-    <h3 id="excellence">Excellence</h3>
-    <p>We maintain high standards for both the products we recommend and the content we produce.</p>
-  </div>
-  <div class="value-item">
-    <h3 id="utility">Utility</h3>
-    <p>Every piece of content we create aims to provide actionable value.</p>
-  </div>
-  <div class="value-item">
-    <h3 id="innovation">Innovation</h3>
-    <p>We constantly explore emerging tools and technologies that can give entrepreneurs an edge.</p>
-  </div>
-  <div class="value-item">
-    <h3 id="accessibility">Accessibility</h3>
-    <p>We break down complex topics into clear, actionable insights for entrepreneurs at any stage.</p>
-  </div>
-</div>
-
-<h2 id="the-team-behind-branduvo">The Team Behind Branduvo</h2>
-<p>Branduvo is powered by a diverse team of digital marketing specialists, software developers, business strategists, and content creators. Our varied backgrounds and specialties ensure we can evaluate tools across multiple domains with expert insight.</p>
-<p>Leading our team is our founder, Alex Mitchell, who brings over 15 years of experience in digital entrepreneurship and has built and sold multiple online businesses. His vision of creating a trusted resource for digital entrepreneurs drives Branduvo's mission and values.</p>
-
-<h2 id="connect-with-us">Connect With Us</h2>
-<p>We value your feedback and suggestions. If you have a product you'd like us to review, a question about our recommendations, or just want to say hello, please <a href="mailto:contact@branduvo.com">contact us</a>. <!-- Replace with your actual contact email or link to contact page --> </p>
-<p>Follow us on social media to stay updated with our latest reviews and insights:</p>
-<div class="social-links">
-  <a href="https://twitter.com/branduvo" target="_blank" rel="noopener noreferrer" aria-label="Branduvo on Twitter">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
-    <span>Twitter</span>
-  </a>
-  <a href="https://facebook.com/branduvo" target="_blank" rel="noopener noreferrer" aria-label="Branduvo on Facebook">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
-    <span>Facebook</span>
-  </a>
-  <a href="https://instagram.com/branduvo" target="_blank" rel="noopener noreferrer" aria-label="Branduvo on Instagram">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-    <span>Instagram</span>
-  </a>
-  <a href="https://linkedin.com/company/branduvo" target="_blank" rel="noopener noreferrer" aria-label="Branduvo on LinkedIn">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-    <span>LinkedIn</span>
-  </a>
-</div>
-
-<h2 id="branduvo-a-daxirush-ltd-brand">Branduvo: A Daxirush Ltd Brand</h2>
-<p>Branduvo operates as a specialized division of Daxirush Ltd, a UK-based digital media and technology company established in 2019. Daxirush Ltd brings extensive resources and expertise to Branduvo, enabling us to maintain the highest standards of quality and reliability in our recommendations.</p>
-
-<p class="page-footer-note">© 2025 Daxirush Ltd. All rights reserved.</p>
+<!--
+SEO & Accessibility Notes:
+1.  Meta Title & Description: Set in the front matter for optimal SERP display.
+2.  Permalink: Clean URL (/contact/) set in front matter.
+3.  <h1> Tag: Main heading for the page content.
+4.  Semantic Labels: <label for="id"> links labels to inputs.
+5.  Required Fields: `required` attribute for client-side validation. `aria-required="true"` for accessibility.
+6.  Honeypot: `name="_gotcha"` and `tabindex="-1"`, `autocomplete="off"` for spam prevention.
+7.  Keywords: Naturally integrate relevant keywords (e.g., "contact", "support", "inquiries", "Your Site Name")
+    in the title, description, h1, and introductory text.
+8.  Mobile-Friendly: The CSS aims for basic responsiveness. Ensure your overall site theme is responsive.
+9.  Page Speed: Keep the page light. Minify CSS/JS if possible (usually handled by Jekyll build process or plugins).
+10. Structured Data (Advanced SEO):
+    Consider adding JSON-LD structured data for `ContactPage` and `Organization` or `LocalBusiness`.
+    This can be added in your layout's <head> or at the bottom of this page.
+    Example for Organization (put in <script type="application/ld+json"> tags):
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Your Site Name",
+      "url": "https://yourdomain.com",
+      "logo": "https://yourdomain.com/assets/images/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-YOUR-PHONE-NUMBER", // If you have one
+        "contactType": "customer service", // or "sales", "technical support" etc.
+        "areaServed": "US", // Or your specific regions
+        "availableLanguage": ["en"]
+      }
+    }
+    For ContactPage:
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "Contact Us - Your Site Name",
+      "description": "How to contact Your Site Name for support and inquiries.",
+      "url": "https://yourdomain.com/contact/"
+    }
+-->
