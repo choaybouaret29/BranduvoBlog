@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: About Branduvo
 description: "Learn about Branduvo's mission to provide premium tools and resources for digital entrepreneurs and creative professionals."
 permalink: /about/
